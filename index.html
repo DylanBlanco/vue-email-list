@@ -11,11 +11,21 @@
 </head>
 <body>
     <div id="app">
-        <h1>
-            {{message}}
-        </h1>
+        <main>
+            <div class="container">
+                <h1>Vue Email List</h1>
+
+                <ul>
+                    <li v-for="(email, index) in emails">
+                        {{ email }}
+                    </li>
+                </ul>
+            </div>
+        </main>
     </div>
 
+    <!--link AXIOS-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!--link VUE js-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!--link js-->
